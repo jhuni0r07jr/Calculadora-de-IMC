@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="IMC.css">
+    <link rel="shortcut icon" href="img/imagem2.jpg" type="image/x-icon">
+    <title>Página inicial</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Índice de Massa Corporal</h1>
+    </header>
+    <main>
+        <form>
+            <label>Digite o seu nome</label><br>
+            <input type="text" id="Nome" name="Nome" placeholder="Antonio"><br>
+
+            <label>Digite a altura em centimetros</label><br>
+            <input type="number" id="altura" name="altura" placeholder="1.70 = 170"><br>
+            
+            <label>Peso(KG)</label><br>
+            <input type="number" class="kgs" id="kg" name="kg" placeholder="Ex: 78.2"><br>
+
+            <div class="Efeito"><input id="Botao" type="button" value="Enviar" onclick="Calcular()"></div>
+
+            <div id="Resultado">
+                Resultado...
+            </div>
+            <img src="Imagem/Tabela_IMC.png">
+        </form>
+    </main>
+    <script src="IMC.js"></script>
+</body>
+</html>
